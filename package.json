@@ -1,10 +1,17 @@
 {
-  "name": "lz4js",
+  "name": "lz4ts",
   "version": "0.2.0",
-  "description": "An Lz4 implementation for the browser.",
-  "main": "lz4.js",
+  "description": "An LZ4 implementation for the browser.",
+  "exports": "./dist/index.js",
+  "module": "dist/index.js",
+  "main": "dist/index.js",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "mocha -R spec test/cases"
+    "prepare": "tsc"
   },
   "repository": {
     "type": "git",
@@ -14,8 +21,7 @@
     "lz4",
     "compression",
     "decompression",
-    "browser",
-    "commonjs"
+    "browser"
   ],
   "author": "John Chadwick",
   "license": "ISC",
